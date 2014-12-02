@@ -10,6 +10,7 @@ use RuntimeException;
 
 error_reporting(E_ALL | E_STRICT);
 chdir(__DIR__);
+echo getcwd();
 
 class Bootstrap
 {
