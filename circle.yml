@@ -2,5 +2,3 @@ general:
 machine:
   php:
     version: 5.6.2
-  environment:
-    ZF2_PATH: .
