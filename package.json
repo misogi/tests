@@ -1,18 +1,12 @@
 {
   "name": "IlcaAdmin",
   "version": "1.0.0",
-  "directories": {
-    "test": "tests"
-  },
   "dependencies": {
     "bower": "^1.3.12",
     "grunt": "^0.4.5"
   },
   "devDependencies": {
     "grunt-bower-task": "^0.4.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
