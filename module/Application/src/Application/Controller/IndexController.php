@@ -9,13 +9,28 @@
 
 namespace Application\Controller;
 
+use Application\Entity\User;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
+    /**
+     * @return ViewModel
+     */
     public function indexAction()
     {
+        $objectManager = $this
+            ->getServiceLocator()
+            ->get('Doctrine\ORM\EntityManager');
+
+        $user = new User();
+        $user->fullName = 'Marco Pivetta';
+
+        $objectManager->persist($user);
+        $objectManager->flush();
+
+        die(var_dump($user->id)); // yes, I'm lazy
         return new ViewModel();
     }
 }

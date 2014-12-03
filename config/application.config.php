@@ -2,7 +2,10 @@
 return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
-        'Application',
+        'ZendDeveloperTools',
+        'DoctrineModule',
+        'DoctrineORMModule',
+        'Application'
     ),
 
     // These are various options for the listeners attached to the ModuleManager
@@ -46,7 +49,7 @@ return array(
         // Enabled by default, prevents usage of modules that depend on other modules
         // that weren't loaded.
         // 'check_dependencies' => true,
-    ),
+    )
 
     // Used to create an own service manager. May contain one or more child arrays.
     //'service_listener_options' => array(
