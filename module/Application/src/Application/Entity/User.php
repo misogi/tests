@@ -15,8 +15,5 @@ class User {
     /** @ORM\Column(type="string") */
     public $fullName;
 
-    /** @ORM\Column(type="integer") */
-    public $age;
-
 // getters/setters
 }
