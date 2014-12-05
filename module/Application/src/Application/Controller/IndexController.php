@@ -32,6 +32,7 @@ class IndexController extends AbstractActionController
 
         $repo = $objectManager->getRepository('Application\Entity\User');
         $user2 = $repo->findOneByFullName('Marco Pivetta');
+        
         var_dump($user2);
         die(var_dump($user->id));
 
